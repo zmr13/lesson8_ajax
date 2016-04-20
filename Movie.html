@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Zach rodefer
+Date: 3/19/2016
 Filename:   Movie.html
 - ->
 <head>
@@ -51,6 +51,38 @@ Filename:   Movie.html
         <a href="#" class="list-group-item">
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Metascore:</h3>
+            <p class="list-group-item-text lead text-primary" id="Metascore">  </p>
+        </a>        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">IMDB rating:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbRating">  </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Poster:</h3>
+            <p class="list-group-item-text lead text-primary" id="Poster">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Country:</h3>
+            <p class="list-group-item-text lead text-primary" id="Country">  </p>
         </a> 
 
     </div>
@@ -70,6 +102,14 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Metascore').html(json.Metascore);
+                     $('#Year').html(json.Year);
+                     $('#imdbRating').html(json.imdbRating);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Awards').html(json.Awards);
+                     $('#Poster').html(json.Poster);
+                     $('#Genre').html(json.Genre);
+                     $('#Country').html(json.Country);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
